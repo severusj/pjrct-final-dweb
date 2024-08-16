@@ -1,40 +1,114 @@
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  font-family: 'Arial, sans-serif';
-  background-color: #f5f5f5;
+/* Estilo general */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
 }
 
-.title {
+.landing-container {
+  text-align: center;
+  color: #333;
+}
+
+/* Header */
+.header {
+  background-color: #0066cc;
+  padding: 20px;
+  color: white;
+}
+
+.company-name {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* Sección Hero */
+.hero {
+  padding: 50px 20px;
+  background-color: #005bb5;
+  color: white;
+}
+
+.hero h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
 }
 
-.input {
-  padding: 10px;
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  padding: 10px 20px;
   font-size: 1rem;
-  margin-bottom: 20px;
+  font-weight: 600;
+  background-color: #ff6600;
+  color: white;
+  border: none;
   border-radius: 5px;
-  border: 1px solid #ccc;
-  width: 250px;
+  cursor: pointer;
 }
 
-.loading {
+.cta-button:hover {
+  background-color: #e65c00;
+}
+
+/* Sección About */
+.about, .projects, .testimonials, .contact {
+  padding: 40px 20px;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+.about h3, .projects h3, .testimonials h3, .contact h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.about p, .testimonials p, .contact p {
   font-size: 1.2rem;
+  font-weight: 300;
 }
 
-.error {
-  color: red;
-  font-size: 1.2rem;
+/* Galería de proyectos */
+.project-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
-.weatherCard {
+.project-card {
+  background-color: #e6e6e6;
   padding: 20px;
+  width: 200px;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-  text-align: center;
+  transition: transform 0.3s;
+  font-weight: 300;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+  background-color: #0066cc;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
 }
