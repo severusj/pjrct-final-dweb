@@ -5,7 +5,7 @@ const App = () => {
   return (
     <div className="landing-container">
       <header className="header">
-        <h1 className="company-name">Constructora Sabado</h1>
+        <h1 className="company-name">Constructora Sabado 17</h1>
         <nav className="nav">
           <a href="#about">Sobre Nosotros</a>
           <a href="#projects">Proyectos</a>
